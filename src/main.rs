@@ -59,7 +59,7 @@ async fn main() -> std::io::Result<()> {
         App::new()
             .route("/genPlist", web::get().to(generate_plist))
     })
-    .bind("127.0.0.1:3788")?
+    .bind("0.0.0.0:3788")?
     .run()
     .await
 }
