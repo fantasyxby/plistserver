@@ -1,0 +1,8 @@
+version: "3"
+services:
+  plistserver:
+    image: ghcr.io/fantasyxby/plistserver:latest
+    container_name: plistserver
+    restart: unless-stopped
+    ports:
+      - "3788:3788"
